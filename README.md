@@ -5,7 +5,7 @@
 ## Procedure
 1. 读入图片<br>
 ```c++
-image = imread(file,CV_LOAD_IMAGE_COLOR;
+image = imread(file,CV_LOAD_IMAGE_COLOR);
 imshow("real",image);
 ```
 2. 创建10个聚类中心<br>
