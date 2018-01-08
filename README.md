@@ -15,8 +15,10 @@ means.resize(clusters_);
 3. 进行10次聚类尝试<br>
 ```c++
 for(int i = 0;i<means.size();i++)
-			if( abs(preVals[i].B - means[i].B) + abs(preVals[i].G - means[i].G) + abs(preVals[i].R - means[i].R) > 10){
-				converged=false;
+	if( abs(preVals[i].B - means[i].B) + abs(preVals[i].G - means[i].G) + abs(preVals[i].R - means[i].R) > 10)
+	{
+		converged=false;
+	}
 ```
 4. 显示result&cluster<br>
 ```c++
