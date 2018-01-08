@@ -1,5 +1,6 @@
 #  k-means image compression
 * Written by `Qingtong` in `2017-01-08`
+* Project environment : [Visual Studio 2015](http://download.microsoft.com/download/B/4/8/B4870509-05CB-447C-878F-2F80E4CB464C/vs2015.com_chs.iso)
 * 用k-means算法对图片进行压缩<br>
 * 此算法使用了[OpenCV](https://opencv.org)开源计算机视觉库<br>
 ## Procedure
