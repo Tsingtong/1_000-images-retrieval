@@ -1,21 +1,18 @@
 # 1_000-images-classification
-1_000-images-classification Branch:master
+1_000-images-classification Branch:master<br>
+`1000张图片检索` 分支：`master`
 
 # 适配了Ubuntu 16.04LTS版本，修改了部分代码
-Created by luminglin , Adapted by Tsingtong for ubuntu16.04LTS
+由 luminglin 创建, liuqingtong 针对 ubuntu16.04LTS 进行了适配
 * 在ubuntu 16.04LTS系统基础上进行了适配，并且改变智能指针`auto_ptr`为`unique_ptr`
-* 在query文件中增加了1000张图片遍历查询方法(ongoing...)
-
-  通过对每张图片用SIFT算法提取特征表达和特征描述后生成BoWs
-
-  完成了idf计算
+* 在query中增加了1000张图片遍历查询方法(ongoing...)
   
 # 使用步骤
 
 ## 1. 配置环境
-需要安装 `opencv2.4.13` from https://github.com/opencv/opencv/archive/2.4.13.5.zip 
+编译安装 `opencv2.4.13` from https://github.com/opencv/opencv/archive/2.4.13.5.zip <br>
 
-确认`makefile`中`C 编译器的选项`、`include路径`、`lib路径`都为正确的路径，以下为标准路径
+确认`makefile`中`C 编译器的选项`、`include路径`、`lib路径`都为正确的路径，以下为标准路径样式<br>
 ```
 # Example
 CFLAGS = -std=c++11
@@ -23,7 +20,7 @@ INCPATH = -I/usr/local/include
 LIBPATH = -L/usr/local/lib
 ```
 
-## 2. 下载1000张图片
+## 2. 下载1000张图片集
 下载图像集
 ```
 wget http://wang.ist.psu.edu/~jwang/test1.tar
@@ -37,16 +34,25 @@ tar -zxvf 到本地文件夹，并在train.cpp中修改目录地址为解压出�
 ## 4. 执行程序
 在shell中依次执行下面三步
 
-* `./train 1000`
-    训练文件夹中的1000张图片
-    
-* `./genBOW /Users/lml/Desktop/image.orig/`
-    为每张图片生成BoW Mat，包括idf
+* `./train 1000`<br>
+    训练文件夹中的1000张图片<br>
+![train](http://112.74.19.125/owncloud/index.php/s/CVMcIMV7xpEg97c/download)
 
-* `./query /Users/lml/Desktop/image.orig/999.jpg`
-    现在可以在./result.html中查看执行的结果了
-    如遇到图片不显示问题，请逐一在每个cpp文件中的检查目录路径是否正确
+* `./genBOW /Users/lml/Desktop/image.orig/`<br>
+    为每张图片生成BoW Mat，包括idf<br>
+![genBOW](http://112.74.19.125/owncloud/index.php/s/Pw4U8fo0FZxIrkF/download)
+
+* `./query /Users/lml/Desktop/image.orig/999.jpg`<br>
+    查询某图片的检索结果<br>
+![query](http://112.74.19.125/owncloud/index.php/s/jjiU3NrdSdF4N1v/download)
+
+## 查看结果
+   结果保存为html文件了，可以在./result.html中查看执行的结果了
+![result](http://112.74.19.125/owncloud/index.php/s/rqgebwZMPYDEUJi/download)
+* 如遇到图片不显示问题，请检查cpp文件中的目录路径是否填写正确，并重新编译生成
 
 # 相关链接
+* bag-of-words-dev-version<br>
 https://github.com/willard-yuan/image-retrieval/tree/master/bag-of-words-dev-version
+* vocabtree<br>
 https://github.com/psastras/vocabtree
