@@ -48,7 +48,7 @@ tar -zxvf 到本地文件夹，并在train.cpp中修改目录地址为解压出�
 
 ## 查看结果
    结果保存为html文件了，可以在./result.html中查看执行的结果了
-![result](http://112.74.19.125/owncloud/index.php/s/rqgebwZMPYDEUJi/download)
+![result](http://112.74.19.125/owncloud/index.php/s/Hn4iRi48iLo8gCa/download)
 * 如遇到图片不显示问题，请检查cpp文件中的目录路径是否填写正确，并重新编译生成
 
 # 相关链接
