@@ -1,8 +1,10 @@
 # 1_000-images-classification
 1_000-images-classification Branch:master<br>
-`1000张图片检索` 分支：`master`
+Repository 分支
+* `BoW图片检索` master分支
+* `k-means算法图片压缩` k-means_image-compression分支
 
-# 适配了Ubuntu 16.04LTS版本，修改了部分代码
+# 适配了Ubuntu 16.04LTS版本，并修改了部分代码
 由 luminglin 创建, liuqingtong 针对 ubuntu16.04LTS 进行了适配
 * 在ubuntu 16.04LTS系统基础上进行了适配，并且改变智能指针`auto_ptr`为`unique_ptr`
 * 在query中增加了1000张图片遍历查询方法(ongoing...)
