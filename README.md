@@ -28,12 +28,12 @@ LIBPATH = -L/usr/local/lib
 ```
 
 ## 2. 下载1000张图片集
-下载图像集 from PSU
+下载图像集 from `The Pennsylvania State University`<br>
 ![psu](http://112.74.19.125/owncloud/index.php/s/PCLoyIewd1b6nqY/download)
 ```
 wget http://wang.ist.psu.edu/~jwang/test1.tar
 ```
-tar -zxvf 到本地文件夹，并在train.cpp中修改目录地址为解压出来的文件目录`.../image.orig`
+tar -zxvf 到本地文件夹，并在train.cpp中修改目录地址为解压出来的文件目录为`.../image.orig`
 
 ## 3. 编译
 ```
