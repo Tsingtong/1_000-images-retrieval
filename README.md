@@ -28,7 +28,8 @@ LIBPATH = -L/usr/local/lib
 ```
 
 ## 2. 下载1000张图片集
-下载图像集
+下载图像集 from PSU
+![psu](http://112.74.19.125/owncloud/index.php/s/PCLoyIewd1b6nqY/download)
 ```
 wget http://wang.ist.psu.edu/~jwang/test1.tar
 ```
