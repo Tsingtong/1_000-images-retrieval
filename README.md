@@ -9,8 +9,16 @@
 # 使用步骤
 
 ## 1. 配置环境
+* Ubuntu 16.04 LTS<br>
+`Ubuntu 16.04 LTS` from http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso <br>
+
+* OpenCV 2.4.13<br>
 编译安装 `opencv2.4.13` from https://github.com/opencv/opencv/archive/2.4.13.5.zip <br>
 
+* C++11<br>
+introduction from https://gcc.gnu.org/onlinedocs/gcc-4.8.1/libstdc++/manual/manual/status.html#status.iso.2011
+
+### 确认makefile文件
 确认`makefile`中`C 编译器的选项`、`include路径`、`lib路径`都为正确的路径，以下为标准路径样式<br>
 ```
 # Example
@@ -27,8 +35,15 @@ wget http://wang.ist.psu.edu/~jwang/test1.tar
 tar -zxvf 到本地文件夹，并在train.cpp中修改目录地址为解压出来的文件目录`.../image.orig`
 
 ## 3. 编译
-`make`...
-我们得到三个可执行文件：train genBOW query
+```
+make...
+```
+我们将得到三个可执行文件：train genBOW query<br>
+* 预计遇到的问题及解决方案<br>
+ 1.  缺少include文件`"boost/move/unique_ptr.hpp"`<br>
+```
+sudo apt-get install libboost-dev
+```
 
 ## 4. 执行程序
 在shell中依次执行下面三步
