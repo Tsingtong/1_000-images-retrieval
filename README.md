@@ -29,7 +29,7 @@ Source was created by luminglin on 2017.11.17<br>
 introduction from https://gcc.gnu.org/onlinedocs/gcc-4.8.1/libstdc++/manual/manual/status.html#status.iso.2011
 Ubuntu 16.04 LTS 默认C编译器为c++11
 
-### 修改makefile文件
+## 1. 修改makefile文件
 * 若按默认安装编译方式编译的OpenCV 2.4.13，则可不用修改makefile文件，直接进行下一步
 确认`makefile`中`C 编译器的选项`、`include路径`、`lib路径`都为正确的路径，以下为标准路径样式<br>
 ```
