@@ -1,0 +1,10 @@
+000-108 people
+109-199 beach
+200-299 building
+300-399 bus
+400-499 dinosaur
+500-599 elephant
+600-699 flower
+700-799 horse
+800-899 mountain
+900-999 food
