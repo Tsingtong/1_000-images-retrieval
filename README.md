@@ -9,6 +9,13 @@ Source was created by luminglin on 2017.11.17<br>
 * 改变智能指针`auto_ptr`为`unique_ptr`
 * 图片集已经整合到release的repo中，无需单独下载图片集
 
+# 目录结构
+* 你将用到以下两个文件夹<br>
+./BoW_image_classification ..................... Project dir<br>
+./image.orig ................................................... Dataset dir<br>
+* 图片集标签<br>
+./image.orig_index.txt<br>
+
 # 使用步骤
 
 ## 1. 配置环境
@@ -20,7 +27,7 @@ Source was created by luminglin on 2017.11.17<br>
 
 * C++11<br>
 introduction from https://gcc.gnu.org/onlinedocs/gcc-4.8.1/libstdc++/manual/manual/status.html#status.iso.2011
-* Ubuntu 16.04 LTS 默认为c++11
+Ubuntu 16.04 LTS 默认C编译器为c++11
 
 ### 修改makefile文件
 * 若按默认安装编译方式编译的OpenCV 2.4.13，则可不用修改makefile文件，直接进行下一步
@@ -33,7 +40,7 @@ LIBPATH = -L/usr/local/lib
 ```
 
 ## 2. 修改路径
-修改`BagOfFeature.cpp`,`query.cpp`,`train.cpp`中的路径字符串，确保正确的`image.orig`路径和`SIFTdetector`、`SIFTdescriptor`路径被描述
+修改`BagOfFeature.cpp`,`query.cpp`,`train.cpp`中的路径字符串，确保正确的`image.orig`路径和`data`路径被描述
 
 ## 3. 编译
 ```
