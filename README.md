@@ -31,8 +31,9 @@ CFLAGS = -std=c++11
 INCPATH = -I/usr/local/include
 LIBPATH = -L/usr/local/lib
 ```
+
 ## 2. 修改路径
-修改`BagOfFeature.cpp`,`query.cpp`,`train.cpp`中的路径字符串，确保正确的`图片源`路径和`SIFTdetector`、`SIFTdescriptor`路径被描述
+修改`BagOfFeature.cpp`,`query.cpp`,`train.cpp`中的路径字符串，确保正确的`image.orig`路径和`SIFTdetector`、`SIFTdescriptor`路径被描述
 
 ## 3. 编译
 ```
@@ -46,23 +47,23 @@ sudo apt-get install libboost-dev
 ```
 
 ## 4. 执行程序
-在shell中依次执行下面三步
+在shell中依次执行下面三条命令
 
 * `./train 1000`<br>
     训练文件夹中的1000张图片<br>
-![train](http://112.74.19.125/owncloud/index.php/s/CVMcIMV7xpEg97c/download)
+![train](https://github.com/Tsingtong/1_000-images-classification/raw/release/Screenshots/train.png)
 
 * `./genBOW /Users/lml/Desktop/image.orig/`<br>
     为每张图片生成BoW Mat，包括idf<br>
-![genBOW](http://112.74.19.125/owncloud/index.php/s/Pw4U8fo0FZxIrkF/download)
+![genBOW](https://github.com/Tsingtong/1_000-images-classification/raw/release/Screenshots/genBOW.png)
 
 * `./query /Users/lml/Desktop/image.orig/999.jpg`<br>
     查询某图片的检索结果<br>
-![query](http://112.74.19.125/owncloud/index.php/s/jjiU3NrdSdF4N1v/download)
+![query](https://github.com/Tsingtong/1_000-images-classification/raw/release/Screenshots/query.png)
 
 ## 查看结果
    结果保存为html文件了，可以在./result.html中查看执行的结果了
-![result](http://112.74.19.125/owncloud/index.php/s/Hn4iRi48iLo8gCa/download)
+![result](https://github.com/Tsingtong/1_000-images-classification/raw/release/Screenshots/result.png)
 * 如遇到result.html页面内图片不显示问题，请检查cpp文件中的目录路径是否填写正确，修改后重新编译生成
 
 # 相关链接
