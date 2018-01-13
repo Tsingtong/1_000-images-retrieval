@@ -1,6 +1,6 @@
 # 1_000-images-classification
-Using BoW to classify 1000 images<br>
-1_000-images-classification Branch:master<br>
+Using SIFT detector and SIFT descriptors to generate BOWs for each image <br>
+1_000-images-classification Branch:release<br>
 Source was created by luminglin on 2017.11.17<br>
 
 # 版本日志
