@@ -1,6 +1,6 @@
-# 1_000-images-classification
+# 1_000-images-retrieval
 Using SIFT detector and SIFT descriptors to generate BOWs for each image <br>
-1_000-images-classification Branch:release<br>
+1_000-images-retrieval Branch:release<br>
 Source was created by luminglin on 2017.11.17<br>
 
 # 版本日志
