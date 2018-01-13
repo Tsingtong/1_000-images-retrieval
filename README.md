@@ -1,5 +1,7 @@
 # 1_000-images-classification
+Using SIFT detector and SIFT descriptors to generate BOWs for each image <br>
 1_000-images-classification Branch:master<br>
+Source was created by luminglin on 2017.11.17<br>
 
 # 适配了Ubuntu 16.04LTS版本，并修改了部分代码
 由 luminglin 创建, liuqingtong 针对 ubuntu16.04LTS 进行了适配
